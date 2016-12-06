@@ -126,5 +126,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR
 
 LEAFLET_CONFIG = {
-    'SPATIAL_EXTENT': (5.0, 44.0, 7.5, 46)
+    'DEFAULT_CENTER': (30.367, -97.73),
+    'DEFAULT_ZOOM': 18,
+    'MIN_ZOOM': 3,
+    'MAX_ZOOM': 30,
 }
