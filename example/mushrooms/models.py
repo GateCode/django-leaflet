@@ -15,3 +15,13 @@ class MushroomSpot(models.Model):
     @property
     def picture_url(self):
         return self.picture.url
+
+class Building(models.Model):
+
+    propertyname = models.CharField(max_length=256)
+    title = models.CharField(max_length=256)
+    description = models.TextField()
+    geom = PolygonField()
+
+    def __unicode__(self):
+        return self.title
